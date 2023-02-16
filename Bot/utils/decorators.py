@@ -11,9 +11,9 @@ def ffmpeg_settings(id, input, FT):
         crf = 28
     output = input.rsplit('.',1)[0]
     if '.mkv' in input:
-        output = output+'_IA.mkv'    
+        output = output+' [720p x265] @animxt.mkv'    
     else:
-        output = output+'_IA.mp4'    
+        output = output+' [720p x265] @animxt.mp4'    
     
     if vcodec == 'x264':
         vcodecs = 'libx264'
